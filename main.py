@@ -1,7 +1,7 @@
 import telebot
-from currency_converter import CurrencyConverter, RateNotFoundError
+from currency_converter import CurrencyConverter
 
-TOKEN = '6673640651:AAGMx7ZDEPLt8rgoMj3NOcds4jFt3Tf5Mac'
+TOKEN = 'TOKEN'
 
 bot = telebot.TeleBot(TOKEN)
 converter = CurrencyConverter()
