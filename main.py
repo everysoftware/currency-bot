@@ -14,7 +14,7 @@ def start_handler(msg):
 
 
 def get_currency_markup():
-    markup = telebot.types.ReplyKeyboardMarkup(row_width=2)
+    markup = telebot.types.ReplyKeyboardMarkup(one_time_keyboard=True, row_width=2)
     markup.add(
         telebot.types.KeyboardButton('RUB->USD'),
         telebot.types.KeyboardButton('RUB->EUR'),
@@ -26,7 +26,7 @@ def get_currency_markup():
 
 
 def get_yes_no_markup():
-    markup = telebot.types.ReplyKeyboardMarkup()
+    markup = telebot.types.ReplyKeyboardMarkup(one_time_keyboard=True)
     markup.add(
         telebot.types.KeyboardButton('Да'),
         telebot.types.KeyboardButton('Нет'),
